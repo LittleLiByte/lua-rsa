@@ -11,10 +11,10 @@
 
 * rsa.lua目前提供了4个API,分别是:  
 
-　　**公钥加密**：public_encrypt(msg, publicKey)
-　　**私钥解密**：private_decrypt(msg, privateKey)
-　　**私钥加密**：private_encrypt(msg, privateKey)
-　　**公钥解密**：public_decrypt(msg, publicKey)
+　　**公钥加密**：public_encrypt(msg, publicKey)  
+　　**私钥解密**：private_decrypt(msg, privateKey)  
+　　**私钥加密**：private_encrypt(msg, privateKey)  
+　　**公钥解密**：public_decrypt(msg, publicKey)  
 
 ## 测试说明
 test目录下有两个测试文件，分别是**rsatest.lua**和**rsatest1.lua**。
