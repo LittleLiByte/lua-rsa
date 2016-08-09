@@ -7,13 +7,13 @@
 * 将rsa.lua放到openresty工作目录的lualib/resty目录下
 * 在需要使用的地方通过 require “resty.rsa” 导入
 * rsa.lua目前提供了4个API,分别是: 
-　　公钥加密：**public_encrypt(msg, publicKey)**
+　　公钥加密：**public_encrypt(msg, publicKey)** 
 
-　　私钥解密：**private_decrypt(msg, privateKey)**
+　　私钥解密：**private_decrypt(msg, privateKey)**  
 　　
-　　私钥加密：**private_encrypt(msg, privateKey)** 
+　　私钥加密：**private_encrypt(msg, privateKey)**  
 　　
-　　公钥解密：**public_decrypt(msg, publicKey)**
+　　公钥解密：**public_decrypt(msg, publicKey)**  
 　　
 　　
 ## 测试说明
