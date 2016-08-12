@@ -18,5 +18,5 @@
 
 ## 测试说明
 test目录下有两个测试文件，分别是**rsatest.lua**和**rsatest1.lua**。
-其中，**rsatest.lua**是直接通过ffi调用C的api进行加解密，完全不会有问题。
+其中，**rsatest.lua**是直接通过ffi调用C的api进行加解密，
 **rsatest1.lua**则是使用封装好的rsa.lua。
