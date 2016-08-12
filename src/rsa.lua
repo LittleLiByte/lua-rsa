@@ -32,7 +32,7 @@ function _M.public_encrypt(msg, publicKey)
     if ret == -1 then
         return nil
     end
-    return ffi.string(encrypt)
+    return ffi.string(encrypt,ret)
 end
 
 --私钥解密
@@ -47,7 +47,7 @@ function _M.private_decrypt(msg, privateKey)
     if ret == -1 then
         return nil
     end
-    return ffi.string(decrypt)
+    return ffi.string(decrypt,ret)
 end
 
 --私钥加密
@@ -62,7 +62,7 @@ function _M.private_encrypt(msg, privateKey)
     if ret == -1 then
         return nil
     end
-    return ffi.string(encrypt)
+    return ffi.string(encrypt,ret)
 end
 
 --公钥解密
@@ -77,7 +77,7 @@ function _M.public_decrypt(msg, publicKey)
     if ret == -1 then
         return nil
     end
-    return ffi.string(decrypt)
+    return ffi.string(decrypt,ret)
 end
 
 return _M
