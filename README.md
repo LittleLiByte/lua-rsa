@@ -19,4 +19,4 @@
 ## 测试说明
 test目录下有两个测试文件，分别是**rsatest.lua**和**rsatest1.lua**。
 其中，**rsatest.lua**是直接通过ffi调用C的api进行加解密，完全不会有问题。
-**rsatest1.lua**则是使用封装好的rsa.lua。而在rsatest1.lua中，RSA加密完成后返回的是cdata转换而来的字符串，解密的时候再将字符串转为cdata，这其中就会有一些转换导致的问题，可能会导致解密失败。在实际项目中，接口只需要将接收的字符串使用私钥解密就行了，这时候使用rsa.lua这个库是完全没问题的(实际项目中测试通过)。
+**rsatest1.lua**则是使用封装好的rsa.lua。
