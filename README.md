@@ -5,6 +5,8 @@
 ## 使用说明
 * ubuntu系统下,将librsa.so放到usr/lib目录中,你也可以放置到你想要的目录,不过那就需要做相应的设置,这里不做叙述.
 
+* 因为只在ubuntu系统下测试使用过，在其他系统可能会出一些问题，所以如果有问题最好重新编译生成自己系统下的so库，然后再引用。这里也感谢各位的问题反馈。
+
 * 将rsa.lua放到openresty工作目录的lualib/resty目录下
 
 * 在需要使用的地方通过 **require "resty.rsa"** 导入
@@ -20,3 +22,5 @@
 test目录下有两个测试文件，分别是**rsatest.lua**和**rsatest1.lua**。
 其中，**rsatest.lua**是直接通过ffi调用C的api进行加解密，
 **rsatest1.lua**则是使用封装好的rsa.lua。
+
+写了一篇这个库制作到使用的一篇说明文章，如果有兴趣可以查看：[传送门](http://little-byte.com/2016/08/20/openresty-rsa%E5%8A%A0%E8%A7%A3%E5%AF%86%E5%BA%93/)
